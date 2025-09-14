@@ -1,136 +1,101 @@
-<!DOCTYPE html><html lang="fr">
+<!DOCTYPE html>
+<html lang="fr">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Introduction à la gestion de projet</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Introduction à la Gestion de Projet</title>
   <style>
-    body{font-family:Arial, sans-serif;margin:0;background:#f4f4f4;color:#222;line-height:1.6}
-    header{background:#c0392b;color:#fff;padding:25px;text-align:center}
-    header h1{margin:0}
-    .container{max-width:1000px;margin:auto;padding:20px}
-    section{background:#fff;margin:20px 0;padding:20px;border-radius:10px;box-shadow:0 4px 8px rgba(0,0,0,0.1)}
-    h2,h3,h4{color:#333;margin-top:0}
+    body { font-family: Arial, sans-serif; padding: 20px; background: #f4f4f4; }
+    .module { display: none; background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    .module.active { display: block; }
+    button { margin-top: 15px; padding: 10px 20px; background: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer; }
+    button:hover { background: #0056b3; }
+    h2 { color: #333; }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Introduction à la gestion de projet</h1>
-  </header>  <div class="container">
-    <section id="definition">
-      <h2>Qu’est-ce qu’un projet ?</h2>
-      <p><strong>La définition du projet</strong><br>OBJECTIFS D’APPRENTISSAGE</p>
-      <h3>PLAN DU CHAPITRE</h3>
-      <ul>
-        <li>Mise en situation : La définition d’un projet chez ABY inc.</li>
-        <li>2.1 Déterminer le besoin avant de se lancer</li>
-        <li>2.2 Le projet comme réponse au besoin : sélectionner le projet adéquat</li>
-        <li>2.3 Les étapes de la définition du projet</li>
-        <li>Résumé</li>
-        <li>Retour sur la mise en situation</li>
-        <li>Questions de révision</li>
-        <li>Étude de cas : Une entreprise étudiante hors du commun !</li>
-      </ul>
-      <p>Dans ce chapitre, vous découvrirez :</p>
-      <ul>
-        <li>que tout projet commence par un besoin et qu’il est essentiel d’entreprendre un projet qui permet d’y répondre ;</li>
-        <li>la définition des objectifs du projet ;</li>
-        <li>l’importance de déterminer le budget à respecter ;</li>
-        <li>comment évaluer les délais de réalisation du projet ;</li>
-        <li>ce que sont les critères de performance de l’extrant et comment les déterminer ;</li>
-        <li>comment établir les risques du projet pour mieux les contrôler.</li>
-      </ul>
-    </section><section id="besoin">
-  <h2>2.1 Déterminer le besoin avant de se lancer</h2>
-  <p>C’est par la détermination du besoin que tout commence. Le promoteur constate qu’il existe un besoin à combler (organisation, entreprise, gouvernement, organisme sans but lucratif, individu).</p>
-  <p><em>Exemple :</em> La Société des célébrations du 375e anniversaire de Montréal a souhaité illuminer le pont Jacques‑Cartier en 2017. Le besoin était clair : mettre en valeur le pont. Le projet a été confié à Moment Factory.</p>
-  <p>Erreur fréquente : lancer un projet selon ses désirs plutôt que selon un besoin réel exprimé par la clientèle cible.</p>
-</section>
 
-<section id="reponse">
-  <h2>2.2 Le projet comme réponse au besoin : sélectionner le projet adéquat</h2>
-  <p>Plusieurs projets peuvent répondre au même besoin. Le promoteur doit choisir celui qui permet d’atteindre ses objectifs au moindre coût, après avoir réalisé les étapes de définition.</p>
-  <p>Même si cela engendre des coûts supplémentaires, cette méthode permet une décision éclairée.</p>
-</section>
+<h1 style="background-color: red; color: white; margin: 2px; text-align: center;">
+Introduction à la gestion de projet
+</h1>
 
-<section id="etapes">
-  <h2>2.3 Les étapes de la définition du projet</h2>
-  <p>La phase de définition comporte 5 étapes :</p>
-  <ol>
-    <li>Définir les objectifs à atteindre</li>
-    <li>Établir le budget à respecter</li>
-    <li>Établir les délais de réalisation du projet</li>
-    <li>Définir les critères de performance de l’extrant</li>
-    <li>Déterminer les risques du projet</li>
-  </ol>
-</section>
+<!-- Module 1 -->
+<div class="module active" id="module1">
+  <h2 style="background-color: gray;color: White;text-align: center;margin: 2px;">Qu’est-ce qu’un projet ?</h2>
+  <p>
+    Un projet est une initiative temporaire entreprise pour créer un produit, un service ou un résultat unique. Il est caractérisé par :
+    <ul>
+      <li>Un début et une fin définis</li>
+      <li>Des objectifs spécifiques</li>
+      <li>Des ressources limitées (temps, budget, personnel)</li>
+      <li>Un résultat unique ou différent des activités répétitives</li>
+    </ul>
+    Exemple : Construire un pont, développer un logiciel, organiser un événement.
+  </p>
+  <button onclick="nextModule()">Suivant</button>
+</div>
 
-<section id="objectifs">
-  <h3>2.3.1 Les objectifs à atteindre</h3>
-  <p>Les objectifs assurent que tous les intervenants suivent le même chemin vers le but et permettent d’évaluer le travail du mandataire. Ils doivent être mesurables et quantifiables.</p>
-</section>
+<!-- Module 2 -->
+<div class="module" id="module2">
+  <h2 style="background-color: gray;color: White;text-align: center;margin: 2px;">Les caractéristiques d’un projet</h2>
+  <p>
+    Un projet possède plusieurs caractéristiques importantes :
+    <ul>
+      <li>Temporaire : Il a une date de début et de fin</li>
+      <li>Unique : Chaque projet produit un résultat différent</li>
+      <li>Progressif : Le projet avance par étapes</li>
+      <li>Contraintes : Budget, qualité, ressources limitées</li>
+    </ul>
+  </p>
+  <button onclick="nextModule()">Suivant</button>
+</div>
 
-<section id="budget">
-  <h3>2.3.2 Le budget</h3>
-  <p>Le budget limite l’envergure du projet. Il dépend des fonds disponibles et de l’extrant visé. Exemple : compromis entre qualité et taille lors de l’achat d’un divan.</p>
-</section>
+<!-- Module 3 -->
+<div class="module" id="module3">
+  <h2 style="background-color: gray;color: White;text-align: center;margin: 2px;">Les phases d’un projet</h2>
+  <p>
+    Un projet passe généralement par ces phases :
+    <ol>
+      <li>Initiation : Définir les objectifs et la faisabilité</li>
+      <li>Planification : Déterminer le planning, le budget et les ressources</li>
+      <li>Exécution : Réaliser les activités pour produire le résultat</li>
+      <li>Contrôle : Suivre l’avancement et ajuster si nécessaire</li>
+      <li>Clôture : Vérifier que le projet a atteint ses objectifs et formaliser la fin</li>
+    </ol>
+  </p>
+  <button onclick="nextModule()">Suivant</button>
+</div>
 
-<section id="delais">
-  <h3>2.3.3 Les délais</h3>
-  <p>Les délais peuvent être fixés à partir d’une date butoir ou calculés selon la durée estimée des tâches. Exemple : installation d’un manège à La Ronde terminée avant l’ouverture estivale.</p>
-</section>
+<!-- Module 4 -->
+<div class="module" id="module4">
+  <h2 style="background-color: gray;color: White;text-align: center;margin: 2px;">Les outils de gestion de projet</h2>
+  <p>
+    Parmi les outils utilisés pour gérer un projet :
+    <ul>
+      <li>Diagramme de Gantt : Pour planifier et suivre les tâches</li>
+      <li>PERT : Pour analyser les délais</li>
+      <li>Tableaux Kanban : Pour gérer le flux de travail</li>
+      <li>Logiciels : MS Project, Trello, Asana, Monday.com</li>
+    </ul>
+  </p>
+  <button onclick="nextModule()">Suivant</button>
+</div>
 
-<section id="estimation">
-  <h3>2.3.4 Estimation des coûts et de la durée</h3>
-  <p>L’estimation est essentielle mais difficile car chaque projet est unique. Plus la tâche est complexe et éloignée dans le temps, plus l’incertitude est grande.</p>
-</section>
+<script>
+  let currentModule = 1;
 
-<section id="approches">
-  <h3>2.3.5 Approches d’évaluation</h3>
-  <p>Deux approches principales :</p>
-  <ul>
-    <li><strong>Descendante (top down)</strong> : estimation globale puis répartition.</li>
-    <li><strong>Ascendante (bottom up)</strong> : estimation détaillée par tâche.</li>
-  </ul>
-  <p>À l’étape de définition, on privilégie l’approche descendante.</p>
-</section>
+  function nextModule() {
+    const totalModules = document.querySelectorAll('.module').length;
+    document.getElementById('module' + currentModule).classList.remove('active');
 
-<section id="methodes">
-  <h3>2.3.6 Méthodes descendantes</h3>
-  <ul>
-    <li>Méthode des ratios (ex. coût/m²)</li>
-    <li>Méthode proportionnelle (comparaison avec projet similaire)</li>
-    <li>Méthode à trois points (estimations optimiste, réaliste, pessimiste)</li>
-  </ul>
-</section>
+    if (currentModule < totalModules) {
+      currentModule++;
+      document.getElementById('module' + currentModule).classList.add('active');
+    } else {
+      alert("Vous avez terminé le cours !");
+    }
+  }
+</script>
 
-<section id="criteres">
-  <h3>2.3.7 Critères de performance</h3>
-  <p>Indicateurs mesurables à définir : défauts acceptables, taux d’échec, disponibilité, fiabilité, réussite de tests. Ils permettent une évaluation objective.</p>
-</section>
-
-<section id="risques">
-  <h3>2.3.8 Les risques</h3>
-  <p>Tout projet comporte des risques financiers, temporels ou de qualité. Le promoteur doit en identifier quelques‑uns importants (2–3). Exemple : intempéries pour un événement en plein air.</p>
-</section>
-
-<section id="livrable">
-  <h2>Le livrable final de définition du projet</h2>
-  <p>Rapport remis au promoteur contenant :</p>
-  <ol>
-    <li>Le besoin, le projet et les parties prenantes</li>
-    <li>Les paramètres fondamentaux (objectifs SMART, extrant, activités, intrants)</li>
-    <li>Les contraintes (coûts, temps, qualité)</li>
-    <li>Les principaux risques identifiés</li>
-  </ol>
-</section>
-
-<section id="resume">
-  <h2>Résumé</h2>
-  <p>Un projet commence par un besoin. La phase de définition (première du cycle de vie) comprend 5 étapes : objectifs, budget, délais, critères de performance, risques.</p>
-  <p>Deux approches d’estimation existent : ascendante et descendante. Trois méthodes descendantes : ratios, proportionnelle, trois points.</p>
-  <p>Le promoteur doit aussi préciser les critères de performance et identifier quelques risques majeurs (financiers, délais, qualité de l’extrant).</p>
-</section>
-
-  </div>
 </body>
 </html>
