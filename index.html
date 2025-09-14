@@ -8,7 +8,7 @@
     body { font-family: Arial, sans-serif; padding: 20px; background: #f4f4f4; }
     .module { display: none; background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
     .module.active { display: block; }
-    button { margin-top: 15px; padding: 10px 20px; background: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer; }
+    button { margin: 10px 5px 0 0; padding: 10px 20px; background: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer; }
     button:hover { background: #0056b3; }
     h2 { color: #333; }
   </style>
@@ -47,6 +47,7 @@ Introduction à la gestion de projet
       <li>Contraintes : Budget, qualité, ressources limitées</li>
     </ul>
   </p>
+  <button onclick="prevModule()">Retour</button>
   <button onclick="nextModule()">Suivant</button>
 </div>
 
@@ -63,6 +64,7 @@ Introduction à la gestion de projet
       <li>Clôture : Vérifier que le projet a atteint ses objectifs et formaliser la fin</li>
     </ol>
   </p>
+  <button onclick="prevModule()">Retour</button>
   <button onclick="nextModule()">Suivant</button>
 </div>
 
@@ -78,22 +80,51 @@ Introduction à la gestion de projet
       <li>Logiciels : MS Project, Trello, Asana, Monday.com</li>
     </ul>
   </p>
-  <button onclick="nextModule()">Suivant</button>
+  <button onclick="prevModule()">Retour</button>
+  <button onclick="downloadPDF()">Télécharger en PDF</button>
 </div>
+
+<!-- Bibliothèque jsPDF -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 
 <script>
   let currentModule = 1;
+  const totalModules = document.querySelectorAll('.module').length;
 
   function nextModule() {
-    const totalModules = document.querySelectorAll('.module').length;
     document.getElementById('module' + currentModule).classList.remove('active');
-
     if (currentModule < totalModules) {
       currentModule++;
       document.getElementById('module' + currentModule).classList.add('active');
     } else {
       alert("Vous avez terminé le cours !");
     }
+  }
+
+  function prevModule() {
+    document.getElementById('module' + currentModule).classList.remove('active');
+    if (currentModule > 1) {
+      currentModule--;
+      document.getElementById('module' + currentModule).classList.add('active');
+    }
+  }
+
+  function downloadPDF() {
+    const { jsPDF } = window.jspdf;
+    const doc = new jsPDF();
+
+    // Récupérer tout le contenu des modules
+    let content = "";
+    document.querySelectorAll('.module').forEach(module => {
+      const h2 = module.querySelector('h2').innerText;
+      const p = module.querySelector('p').innerText;
+      content += h2 + "\n\n" + p + "\n\n";
+    });
+
+    // Ajouter le contenu au PDF
+    doc.setFontSize(12);
+    doc.text(content, 10, 10, { maxWidth: 190 });
+    doc.save("Cours_Gestion_de_Projet.pdf");
   }
 </script>
 
