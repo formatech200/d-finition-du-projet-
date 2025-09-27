@@ -1,132 +1,283 @@
 <!DOCTYPE html>
+
 <html lang="fr">
+
 <head>
+
   <meta charset="UTF-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Introduction à la Gestion de Projet</title>
+
   <style>
+
     body { font-family: Arial, sans-serif; padding: 20px; background: #f4f4f4; }
+
     .module { display: none; background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+
     .module.active { display: block; }
-    button { margin: 10px 5px 0 0; padding: 10px 20px; background: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer; }
-    button:hover { background: #0056b3; }
-    h2 { color: #333; }
+
+    button { margin-top: 15px; padding: 10px 20px; background: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer; }
+
+    h1, h2 { margin: 10px 0; }
+
+    h1 { text-align: center; color: white; background-color: red; padding: 10px; }
+
+    h2 { color: #333; background-color: gray; color: white; padding: 5px; text-align: center; }
+
   </style>
+
 </head>
+
 <body>
 
-<h1 style="background-color: red; color: white; margin: 2px; text-align: center;">
-Introduction à la gestion de projet
-</h1>
+<h1>Introduction à la gestion de projet</h1>
 
 <!-- Module 1 -->
+
 <div class="module active" id="module1">
-  <h2 style="background-color: gray;color: White;text-align: center;margin: 2px;">Qu’est-ce qu’un projet ?</h2>
+
+  <h2>Qu’est-ce qu’un projet ?</h2>
+
   <p>
-    Un projet est une initiative temporaire entreprise pour créer un produit, un service ou un résultat unique. Il est caractérisé par :
+
+    La définition du projet
+
+  </p>
+
+  <h3>OBJECTIFS D’APPRENTISSAGE</h3>
+
+  <ul>
+
+    <li>Phase : Définition du projet</li>
+
+  </ul>
+
+  <h3>PLAN DU CHAPITRE</h3>
+
+  <ul>
+
+    <li>Mise en situation : La définition d’un projet chez ABY inc.</li>
+
+    <li>2.1 Déterminer le besoin avant de se lancer</li>
+
+    <li>2.2 Le projet comme réponse au besoin : sélectionner le projet adéquat</li>
+
+    <li>2.3 Les étapes de la définition du projet</li>
+
+    <li>Résumé</li>
+
+    <li>Retour sur la mise en situation</li>
+
+    <li>Questions de révision</li>
+
+    <li>Étude de cas : Une entreprise étudiante hors du commun !</li>
+
+  </ul>
+
+  <h3>Introduction</h3>
+
+  <p>
+
+    Dans ce chapitre, vous découvrirez que tout projet commence par un besoin et qu’il
+
+    est essentiel d’entreprendre un projet qui permet d’y répondre ; la définition des
+
+    objectifs du projet ; l’importance de déterminer le budget à respecter ; comment
+
+    évaluer les délais de réalisation du projet ; ce que sont les critères de performance
+
+    de l’extrant et comment les déterminer ; et comment établir les risques du projet pour
+
+    mieux les contrôler.
+
+  </p>
+
+  <h3>2.1 Déterminer le besoin avant de se lancer</h3>
+
+  <p>
+
+    C’est par la détermination du besoin que tout commence. Le promoteur, qui peut
+
+    être une organisation, une entreprise, un gouvernement, un organisme sans but
+
+    lucratif ou même un individu, constate qu’il existe un besoin à combler. Par
+
+    exemple, la Société des célébrations du 375e anniversaire de Montréal a souhaité,
+
+    pour 2017, mettre en valeur le pont Jacques-Cartier. Le besoin était clair : illuminer
+
+    le pont pour en faire un symbole incontournable de la ville.
+
+  </p>
+
+  <p>
+
+    Plusieurs projets ont été étudiés, et c’est la firme montréalaise Moment Factory
+
+    qui a été choisie pour réaliser l’œuvre visuelle. On ne saurait assez insister sur
+
+    l’importance de sélectionner un projet qui réponde réellement au besoin exprimé
+
+    par une clientèle clairement circonscrite.
+
+  </p>
+
+  <h3>2.2 Le projet comme réponse au besoin : sélectionner le projet adéquat</h3>
+
+  <p>
+
+    Le projet doit fournir une réponse au besoin constaté par le promoteur. Il arrive
+
+    parfois que plusieurs projets permettent de répondre au même besoin. Dans ce
+
+    cas, le promoteur doit choisir celui qui permet d’atteindre ses objectifs au moindre
+
+    coût. Cette sélection doit se faire après une définition complète des projets envisagés.
+
+  </p>
+
+  <h3>2.3 Les étapes de la définition du projet</h3>
+
+  <p>
+
+    La phase de définition constitue l’amorce du projet et se divise en cinq étapes :
+
     <ul>
-      <li>Un début et une fin définis</li>
-      <li>Des objectifs spécifiques</li>
-      <li>Des ressources limitées (temps, budget, personnel)</li>
-      <li>Un résultat unique ou différent des activités répétitives</li>
+
+      <li>Définir les objectifs à atteindre</li>
+
+      <li>Établir le budget à respecter</li>
+
+      <li>Établir les délais de réalisation</li>
+
+      <li>Définir les critères de performance de l’extrant</li>
+
+      <li>Déterminer les risques du projet</li>
+
     </ul>
-    Exemple : Construire un pont, développer un logiciel, organiser un événement.
-  </p>
-  <button onclick="nextModule()">Suivant</button>
-</div>
 
-<!-- Module 2 -->
-<div class="module" id="module2">
-  <h2 style="background-color: gray;color: White;text-align: center;margin: 2px;">Les caractéristiques d’un projet</h2>
+  </p>
+
+  <h3>2.3.1 Les objectifs à atteindre</h3>
+
   <p>
-    Un projet possède plusieurs caractéristiques importantes :
-    <ul>
-      <li>Temporaire : Il a une date de début et de fin</li>
-      <li>Unique : Chaque projet produit un résultat différent</li>
-      <li>Progressif : Le projet avance par étapes</li>
-      <li>Contraintes : Budget, qualité, ressources limitées</li>
-    </ul>
-  </p>
-  <button onclick="prevModule()">Retour</button>
-  <button onclick="nextModule()">Suivant</button>
-</div>
 
-<!-- Module 3 -->
-<div class="module" id="module3">
-  <h2 style="background-color: gray;color: White;text-align: center;margin: 2px;">Les phases d’un projet</h2>
+    La définition des objectifs permet d’atteindre deux cibles importantes : s’assurer
+
+    que tous les intervenants suivent le même chemin et permettre au promoteur
+
+    d’évaluer le travail du mandataire. Les objectifs doivent être quantifiables et mesurables.
+
+  </p>
+
+  <h3>2.3.2 Le budget</h3>
+
   <p>
-    Un projet passe généralement par ces phases :
-    <ol>
-      <li>Initiation : Définir les objectifs et la faisabilité</li>
-      <li>Planification : Déterminer le planning, le budget et les ressources</li>
-      <li>Exécution : Réaliser les activités pour produire le résultat</li>
-      <li>Contrôle : Suivre l’avancement et ajuster si nécessaire</li>
-      <li>Clôture : Vérifier que le projet a atteint ses objectifs et formaliser la fin</li>
-    </ol>
-  </p>
-  <button onclick="prevModule()">Retour</button>
-  <button onclick="nextModule()">Suivant</button>
-</div>
 
-<!-- Module 4 -->
-<div class="module" id="module4">
-  <h2 style="background-color: gray;color: White;text-align: center;margin: 2px;">Les outils de gestion de projet</h2>
+    Le budget est un élément restrictif. Il limite l’envergure du projet et les critères
+
+    de performance de l’extrant. Exemple : acheter un divan de marque haut de gamme
+
+    peut dépasser le budget ; on peut alors réduire l’envergure de l’extrant pour rester dans la limite.
+
+  </p>
+
+  <h3>2.3.3 Les délais</h3>
+
   <p>
-    Parmi les outils utilisés pour gérer un projet :
-    <ul>
-      <li>Diagramme de Gantt : Pour planifier et suivre les tâches</li>
-      <li>PERT : Pour analyser les délais</li>
-      <li>Tableaux Kanban : Pour gérer le flux de travail</li>
-      <li>Logiciels : MS Project, Trello, Asana, Monday.com</li>
-    </ul>
-  </p>
-  <button onclick="prevModule()">Retour</button>
-  <button onclick="downloadPDF()">Télécharger en PDF</button>
-</div>
 
-<!-- Bibliothèque jsPDF -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    Les délais peuvent être calculés directement ou à rebours à partir de la date
+
+    souhaitée de livraison. Il est essentiel de vérifier les impératifs liés à la date
+
+    de fin du projet.
+
+  </p>
+
+  <h3>2.3.4 L’estimation des coûts et de la durée</h3>
+
+  <p>
+
+    Il est essentiel d’estimer les coûts et la durée avant de dresser le plan. Plus les tâches
+
+    sont complexes, plus il est difficile de prévoir leur durée.
+
+  </p>
+
+  <h3>2.3.5 Les approches d’évaluation</h3>
+
+  <p>
+
+    Deux approches principales : descendante (top-down) et ascendante (bottom-up).
+
+    L’approche descendante est privilégiée à la phase de définition pour simplifier les calculs.
+
+  </p>
+
+  <h3>2.3.6 L’estimation au moyen des méthodes descendantes</h3>
+
+  <p>
+
+    Trois méthodes : la méthode des ratios, la méthode proportionnelle et l’estimation à trois points.
+
+    Elles permettent d’estimer coûts et durée à partir de projets similaires ou de données d’experts.
+
+  </p>
+
+  <h3>2.3.7 Les critères de performance</h3>
+
+  <p>
+
+    Définir les attentes sur l’extrant du projet à l’aide d’indicateurs mesurables
+
+    (nombre de défauts, taux d’échec, disponibilité, fiabilité, réussite des tests).
+
+  </p>
+
+  <h3>2.3.8 Les risques</h3>
+
+  <p>
+
+    Tout projet comporte des risques. Le promoteur doit déterminer un nombre limité
+
+    de risques importants : financiers, liés à la durée ou à la qualité de l’extrant.
+
+    Il est inutile de considérer les risques non contrôlables comme les catastrophes
+
+    naturelles, sauf si cela fait partie de la planification.
+
+  </p>
+
+  <h3>Résumé</h3>
+
+  <p>
+
+    La phase de définition permet de choisir le projet adéquat, définir ses objectifs,
+
+    établir le budget et les délais, préciser les critères de performance et identifier
+
+    les risques principaux.
+
+  </p>
+
+</div>
 
 <script>
-  let currentModule = 1;
-  const totalModules = document.querySelectorAll('.module').length;
 
-  function nextModule() {
-    document.getElementById('module' + currentModule).classList.remove('active');
-    if (currentModule < totalModules) {
-      currentModule++;
-      document.getElementById('module' + currentModule).classList.add('active');
-    } else {
-      alert("Vous avez terminé le cours !");
-    }
+  // Script simple pour passer d'un module à un autre (si plusieurs modules ajoutés)
+
+  function showModule(id) {
+
+    document.querySelectorAll('.module').forEach(mod => mod.classList.remove('active'));
+
+    document.getElementById(id).classList.add('active');
+
   }
 
-  function prevModule() {
-    document.getElementById('module' + currentModule).classList.remove('active');
-    if (currentModule > 1) {
-      currentModule--;
-      document.getElementById('module' + currentModule).classList.add('active');
-    }
-  }
-
-  function downloadPDF() {
-    const { jsPDF } = window.jspdf;
-    const doc = new jsPDF();
-
-    // Récupérer tout le contenu des modules
-    let content = "";
-    document.querySelectorAll('.module').forEach(module => {
-      const h2 = module.querySelector('h2').innerText;
-      const p = module.querySelector('p').innerText;
-      content += h2 + "\n\n" + p + "\n\n";
-    });
-
-    // Ajouter le contenu au PDF
-    doc.setFontSize(12);
-    doc.text(content, 10, 10, { maxWidth: 190 });
-    doc.save("Cours_Gestion_de_Projet.pdf");
-  }
 </script>
 
 </body>
+
 </html>
